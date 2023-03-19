@@ -54,30 +54,31 @@ void bfs(t_vec** graph, int src, int dest) {
     free(queue);
 }
 
-int main() {
-    int numVertices = 5;
+// int main() {
+//     int numVertices = 5;
 
-    t_vec** graph = (t_vec**)malloc(numVertices * sizeof(t_vec*));
-    for (int i = 0; i < numVertices; i++) {
-        graph[i] = vec(10);
-    }
+//     t_vec** graph = (t_vec**)malloc(numVertices * sizeof(t_vec*));
+//     for (int i = 0; i < numVertices; i++) {
+//         graph[i] = vec(10);
+//     }
 
-    push_back_vec(graph[0], 1);
-    push_back_vec(graph[0], 2);
-    push_back_vec(graph[1], 4);
-    push_back_vec(graph[2], 3);
-    push_back_vec(graph[3], 4);
+//     push_back_vec(graph[0], 1);
+//     push_back_vec(graph[0], 2);
+//     push_back_vec(graph[1], 3);
+//     push_back_vec(graph[1], 4);
+//     push_back_vec(graph[2], 4);
+//     push_back_vec(graph[3], 4);
 
-    int src = 0, dest = 4;
-    printf("Paths from source %d to destination %d are:\n", src, dest);
+//     int src = 0, dest = 4;
+//     printf("Paths from source %d to destination %d are:\n", src, dest);
 
-    bfs(graph, src, dest);
+//     bfs(graph, src, dest);
 
-    for (int i = 0; i < numVertices; i++) {
-        free(graph[i]->array);
-        free(graph[i]);
-    }
-    free(graph);
+//     for (int i = 0; i < numVertices; i++) {
+//         free(graph[i]->array);
+//         free(graph[i]);
+//     }
+//     free(graph);
 
-    return 0;
-}
+//     return 0;
+// }
