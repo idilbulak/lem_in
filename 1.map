@@ -1,0 +1,35 @@
+3
+##start
+r0 2 0
+#comment
+r1 1 1
+r2 3 1
+r3 0 2
+##end
+r4 2 6
+r0-r1
+r0-r2
+r2-r3
+r3-r4
+r1-r4
+#any comment
+#atoi ya bak  linklerin siralamasi scozxumu farkjettiriyooo dikkat et
+
+
+c de bir fonksiyon yazmak istiyorum.
+elimde karinca sayisi var
+ant_count = 3.
+karincalarin gidebilecegi yollar var
+paths[0][0]= {0,1,4}. 
+paths[0][1]= {0,2,3,4}. 
+ayni zamanda elimde hangi karincanin hangi yollari secebilecegi var
+ant_paths = {0,0,1}. bu su demek 1. karinca 0. yolu, 2.karinca 0. yolu ve 3.karinca 1.yolu sececek.
+simdi bu karincalari 0 dan 4e goturmek istiyorum.
+0 baslangic odamiz ve 4 son odamiz. sadece bu odalarda 1den fazla karinca olabilir.
+aradaki odalar yani 1-2-3 te sadece bir seferde bir karinca bulunabilir.
+simdi yazacagim bu fonksiyon ile her adimda karincalarin nerede olacagini yazmak istiyorum.
+her satirda sadece bir adim olabilir.
+ant1: 0, ant2: 0, ant3: 0.
+ant1: 1, ant2: 0, ant3: 2.
+ant1: 4, ant2: 1, ant3: 3.
+ant1: 4, ant2: 4, ant3: 4.

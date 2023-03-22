@@ -8,7 +8,7 @@
 
 void print_path(t_vec* path);
 int not_visited(int x, t_vec* path);
-void bfs(t_vec** graph, int src, int dest);
+t_vec **bfs(t_vec** graph, int src, int dest);
 
 
 #endif

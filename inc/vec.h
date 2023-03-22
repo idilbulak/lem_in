@@ -15,5 +15,6 @@ t_vec*	vec(int capacity);
 void	resize_vec(t_vec* vec);
 void	push_back_vec(t_vec* vec, int value);
 int		size_vec(t_vec* vec);
+t_vec	*vec_from_array(int size, int *data);
 
 #endif

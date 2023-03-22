@@ -188,6 +188,23 @@ int	get_index(t_data *data, char *name)
 
 }
 
+// void print_adjacency_matrix(t_data *data) {
+//     printf("Adjacency matrix:\n");
+//     for (int i = 0; i < data->room_count; i++) {
+//         for (int j = 0; j < data->room_count; j++) {
+//             int connected = 0;
+//             for (int k = 0; k < data->matrix[i]->size; k++) {
+//                 if (data->matrix[i]->array[k] == j) {
+//                     connected = 1;
+//                     break;
+//                 }
+//             }
+//             printf("%d ", connected);
+//         }
+//         printf("\n");
+//     }
+// }
+
 void	get_adjecent_matrix(t_data *data)
 {
 	data->matrix = (t_vec**)malloc(data->room_count* sizeof(t_vec*));
@@ -205,6 +222,7 @@ void	get_adjecent_matrix(t_data *data)
 		push_back_vec(data->matrix[r1], r2);
 		i++;
 	}
+	// print_adjacency_matrix(data);
 }
 
 void	parse_map(char *str, t_data *data)
